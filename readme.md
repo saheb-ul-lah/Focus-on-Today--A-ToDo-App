@@ -1,4 +1,4 @@
-# Focus on Today
+# Focus on Today - A ToDo App
 
 "Focus on Today" is a web application designed to help users set and track daily goals to improve productivity and focus. It provides a simple and intuitive interface for users to add, manage, and mark their goals as completed.
 
