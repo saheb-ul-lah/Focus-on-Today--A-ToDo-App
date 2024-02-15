@@ -5,8 +5,36 @@ const progressLabel = document.querySelector('.progress-label')
 const progressBar = document.querySelector('.progress-bar')
 const progressValue = document.querySelector('.progress-value')
 const calendar = document.querySelectorAll('.calendar p');
+let getWeekDays = document.querySelector('.weekDays');
+let CurrentDate = document.querySelector('.mainDay');
 
-let day=
+
+function needWeekDays(){
+  var days = [
+      "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+  ];
+  let currentDate = new Date();
+  let dayOfWeek = days[currentDate.getDay()];
+  return dayOfWeek;
+}
+
+getWeekDays.innerHTML = needWeekDays();
+
+function getCurrDate (){
+  let months = [
+    "January", "Febuary", "March", "April", "June", "July", "August", "September", "October", "November", "December"
+  ];
+  let currDate = new Date();
+  let day = currDate.getDate();
+  let monthIndex = currDate.getMonth();
+  let year = currDate.getFullYear();
+  let monthName = months[monthIndex];
+
+  return day + " " + monthName + " " + year;
+}
+
+CurrentDate.innerHTML = getCurrDate();
+
 
 const allQuotes = [
   'Raise the bar by completing your goals!',
@@ -95,4 +123,4 @@ inputFields.forEach((input) => {
 
     localStorage.setItem('allGoals', JSON.stringify(allGoals))
   })
-})
+});
