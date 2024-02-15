@@ -11,7 +11,7 @@ let CurrentDate = document.querySelector('.mainDay');
 
 function needWeekDays(){
   var days = [
-      "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
   ];
   let currentDate = new Date();
   let dayOfWeek = days[currentDate.getDay()];
@@ -22,7 +22,7 @@ getWeekDays.innerHTML = needWeekDays();
 
 function getCurrDate (){
   let months = [
-    "January", "Febuary", "March", "April", "June", "July", "August", "September", "October", "November", "December"
+    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
   ];
   let currDate = new Date();
   let day = currDate.getDate();
