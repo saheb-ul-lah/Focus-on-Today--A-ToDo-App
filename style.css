@@ -135,7 +135,7 @@ main {
   font-size: 10px;
   text-align: center;
   color: #858585;
-  margin-top: 64px;
+  margin-top: 10px;
 }
 
 .completed .custom-checkbox {
@@ -152,6 +152,7 @@ main {
     text-decoration-line: line-through;
 }
 
+
 @media (max-width: 768px) {
   .title {
     font-size: 32px;
@@ -160,7 +161,7 @@ main {
   .app-container {
     padding: 16px 32px;
   }
-  
+
   .goal-container {
     height: 64px;
     margin-bottom: 24px;
@@ -171,7 +172,7 @@ main {
     width: 20px;
     height: 20px;
   }
-  
+
   .made-with {
     margin-top: 32px;
   }
