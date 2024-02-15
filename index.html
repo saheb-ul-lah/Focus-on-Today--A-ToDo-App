@@ -12,21 +12,24 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Style+Script&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
   <main>
     <h1 class="title">Focus on <span>Today</span></h1>
     <div class="calendar">
-      <p><span>Monday</span></p> <!--Day-->
-      <p><span class="day">01</span> <span class="month">January</span> <span class="year">2024</span></p> <!--Date-->
+      <p><span class="weekDays">Monday</span></p> <!--Day-->
+<!--      <p><span class="day">01</span> <span class="month">January</span> <span class="year">2024</span></p> &lt;!&ndash;Date&ndash;&gt;-->
+      <p><span class="mainDay">01 January 2024</span></p> <!--Date-->
     </div>
 
     <div class="app-container">
       <h2 class="subtitle">
-        <span>Today</span>
-        <img class="sun-icon" src="./images/Sun.svg" alt="sun" />
+          <span>Today</span>
+          <img class="sun-icon" src="./images/Sun.svg" alt="sun" />
+          <!-- Add a button for adding more tasks -->
+          <!--<button id="addTaskButton">Add Task</button>-->
       </h2>
       <p class="progress-label">Raise the bar by completing your goals!</p>
       <div class="progress-bar">
@@ -54,10 +57,9 @@
         </div>
         <input id="third" class="goal-input" type="text" placeholder="Add new goal... " />
       </div>
-
-      <p class="quote">“Move one step ahead, today!”</p>
-      <p class="made-with">Made with ❤️ by Mohammad Saheb Mansoori</p>
     </div>
+    <p class="quote">“Move one step ahead, today!”</p>
+    <p class="made-with">Made with ❤️ by Mohammad Saheb Mansoori</p>
   </main>
 </body>
 
